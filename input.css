@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skleanz {
+    -webkit-text-stroke: 1pt rgb(250, 176, 176);
+    -webkit-text-fill-color: white;
+}
+
+main #sec {
+    background-image: url(../images/full-shot-man-pushing-elevator-button.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.thinking {
+    background-image: url(../images/male-wearing-apron-female-white-t-shirt-smiling-broadly-being-glad-clean.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.custom-shape-divider-bottom-1687769215 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10px;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687769215 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-bottom-1687769215 .shape-fill {
+    fill: #E6F7FC;
+}

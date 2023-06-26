@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Alkatra:wght@500&family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;1,400&family=Josefin+Sans:wght@300&family=Outfit:wght@400;700&family=Pacifico&family=Poppins:wght@200;400;500;600;700&family=Redressed&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../script.js" defer></script>
+    <title>Simple Tailwind Starter</title>
+</head>
+
+<body>
+    <div id="mobile-overlay" class="hidden  bg-black fixed z-20 opacity-90 top-0 right-0 left-0 bottom-0"></div>
+    <header class="  px-6 md:py-2  md:pl-28 md:pr-20 bg-[#FDF9F8] shadow-2xl shadow-black md:shadow-none relative">
+
+        <nav class="flex justify-between items-center">
+            <div class="flex flex-row">
+                <img src="./images/image 10.png" alt="">
+                <img src="./images/IMG-20230318-WA0017.jpg" alt="" class="w-24 h-20">
+            </div>
+            <button id="hammenu" type="button" class="focus\:outline-none cursor-pointer md:hidden rotate-180">
+                <div class="w-[30px] h-[4px] bg-black"></div>
+                <div class="w-[30px] h-[4px] bg-black  translate-y-1"></div>
+                <div class="w-[30px] h-[4px] bg-black translate-y-2"></div>
+            </button>
+            <div class="hidden md:block">
+                <div class="flex text-xl text-black space-x-10">
+                    <a href="#">
+                        <p class="hover:text-green-500 cursor-pointer">Home</p>
+                    </a>
+                    <a href="#2">
+                        <p class="hover:text-green-500 cursor-pointer">How it works </p>
+                    </a>
+                    <a href="#3">
+                        <p class="hover:text-green-500 cursor-pointer">Services</p>
+                    </a>
+                   
+                    <a href="">
+                        <p class="hover:text-green-500 cursor-pointer">Contact Us</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile">
+            <div
+                class="bg-white   rounded-lg text-center font-bold font-alata w-3/4  grid gap-4 py-5 top-10 left-[70px] right-[100px] h-fit   z-40 border-2 border-blue-700 absolute ">
+                <div class="close flex justify-end cursor-pointer transition-all duration-200" id="close">
+                    <div class=" flex flex-col space-y-2 px-5">
+                        <div class="border-2 border-blue-700 w-10 transform rotate-45"></div>
+                        <div class="border-2 border-red-700 w-10 transform -rotate-45 -translate-y-3"></div>
+                    </div>
+                </div>
+                <a href="#">
+                    <p id="Home" class="hover:text-green-500 cursor-pointer">Home</p>
+                </a>
+                <a href="#2">
+                    <p id="aboutus" class="hover:text-green-500 cursor-pointer">About Us</p>
+                </a>
+                <a href="#3">
+                    <p id="Contact" class="hover:text-green-500 cursor-pointer">Contact Us</p>
+                </a>
+                <a href="">
+                    <p id="blog" class="hover:text-green-500 cursor-pointer">Blog</p>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <section class="w-full  relative flex flex-col  justify-center  z-10  h-[600px]" id="sec">
+            <div class="opacity-70 bg-[#FDF9F8] absolute top-0 right-0 bottom-0 z-20 left-0 flex  justify-center">
+            </div>
+            <div class="text-center    relative z-30">
+                <p
+                    class="text-xl mx-auto text-center bg-[#F7FEFF] rounded-full px-2 py-2  text-black font-bold max-w-md">
+                    20%
+                    discount for one month subscription</p>
+                <p class="text-5xl text-[#00334C]  text-center mt-5 mb-7  font-bold ">Reliable & Fast Cleaning
+                    Service.</p>
+                <p class="text-xl  text-center text-[#00334C] max-w-4xl mx-auto   ">Skleanz laundry service willw
+                    wash,dry and
+                    fold your laundry at an affordable price. Pick up and drop-up options available!</p>
+                <div class="my-10">
+                    <a href="#2" class=" flex justify-center"> <button
+                            class="capitalize shadow-lg shadow-blue-200 font-bold   text-center   px-14 py-2  text-2xl rounded-full bg-[#D0F6FF]">How
+                            it works</button></a>
+                </div>
+                <div class="flex justify-center flex-row gap-5">
+                    <div class="flex flex-row">
+                        <p class="text-3xl font-bold">18M+ </p>
+                        <p class="leading-none">Happy <br> Customers</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <p class="text-3xl font-bold">18+ </p>
+                        <p class="leading-none">Years of <br> experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute hidden md:block">
+                <!-- <img src="./images/hero.png" alt="" class="mb-20 w-96"> -->
+                <img src="./images/Bubbles.png" alt="" class="absolute top-0 left-0">
+                <img src="./images/Bubbles (1).png" alt="" class="absolute top-0 -left-16">
+            </div>
+            <img src="./images/Bubbles (2).png" alt="" class="absolute top-0 -mt-3 right-28 hidden md:block">
+
+            <div class="custom-shape-divider-bottom-1687769215">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="px-6 bg-[#F2F9FA] py-10  w-full  md:px-20" id="2">
+            <p class="text-center font-bold text-xl mb-5 text-[#21B7E2]">How it works</p>
+            <p class="text-center text-black text-4xl mb-14 font-bold">Get it done in 4 steps</p>
+            <div class="flex flex-col items-center md:flex-row gap-10 md:justify-center">
+                <div
+                    class="bg-white w-60 p-5 hover:scale-110 transition-all duration-700 shadow-lg shadow-blue-300  rounded-md">
+                    <p class="text-center font-bold">Step 1</p>
+                    <p class="text-center text-[#21B7E2] text-xl my-2 font-bold">ROUGH CLEAN</p>
+                    <img src="./images/Address-bro 1.png" alt="">
+                </div>
+                <div
+                    class="bg-white hover:scale-110 transition-all duration-700  w-60 p-5 shadow-lg shadow-blue-300  rounded-md">
+                    <p class="text-center font-bold">Step 2</p>
+                    <p class="text-center text-[#21B7E2] text-xl my-2  font-bold">LIGHT CLEAN</p>
+                    <img src="./images/Laundry and dry cleaning-bro (4) 1.png" alt="" class="-mt-14">
+                </div>
+                <div
+                    class="bg-white hover:scale-110 transition-all duration-700  w-60 p-5 shadow-lg shadow-blue-300 rounded-md">
+                    <p class="text-center font-bold">Step 3</p>
+                    <p class="text-center text-[#21B7E2] text-xl my-2  font-bold"></p>
+                    <img src="./images/Laundry and dry cleaning-bro 1.png" alt="" class="-mt-14">
+                </div>
+                <div
+                    class="bg-white hover:scale-110 transition-all duration-700  w-60 p-5 shadow-lg shadow-blue-300 rounded-md">
+                    <p class="text-center font-bold">Step 4</p>
+                    <p class="text-center text-[#21B7E2] text-xl my-2  font-bold">FINAL CLEAN</p>
+                    <img src="./images/Messenger-bro 1.png" alt="" class="">
+                </div>
+            </div>
+        </section>
+        <section class=" bg-[#F7FEFF] py-10 load ">
+            <p class="text-center font-bold text-xl my-5 text-[#21B7E2]">Services</p>
+            <p class="text-center text-black text-4xl mb-14 font-bold">Services & Packages</p>
+            <div class="flex flex-col items-center md:flex-row gap-5 md:justify-center">
+                <div class="text-center bg-white rounded-l-2xl p-10">
+                    <div class="flex flex-row">
+                        <img src="./images/image 13 (1) 1.png" alt="" class="w-10">
+                        <P class="text-2xl text-[#21B7E2] font-alkatra">Fumigation</P>
+                    </div>
+                    <div class="flex flex-col mt-3 gap-5">
+                        <div>
+                            <div class="flex flex-row items-center  justify-between">
+                                <img src="./images/Americancockroach-removebg-preview.png" alt="" class="w-28">
+                                <p class="font-bold">Pest Control</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                        <div>
+                            <div class="flex flex-row items-center justify-between">
+                                <img src="./images/termite-removebg-preview.png" alt="" class="w-28">
+                                <p class="font-bold">Bed Bug Control</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                        <div>
+                            <div class="flex flex-row items-center justify-between">
+                                <img src="./images/Mosquito-PNG.png" alt="" class="w-20">
+                                <p class="font-bold">Mosqitoes Control</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                    </div>
+                    <button
+                        class="text-center bg-[#D0F6FF] font-bold text-xl rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                </div>
+                <div class="text-center bg-[#D0F6FF] -translate-y-5 shadow-2xl shadow-[#E5ECED] rounded-2xl p-10">
+                    <div class="flex flex-row items-center">
+                        <img src="./images/image 12 (1) 1.png" alt="" class="w-10">
+                        <p class="text-center text-2xl text-[#21B7E2] font-alkatra">Cleaning Services</p>
+                    </div>
+                    <div class="flex flex-col gap-3 mt-3">
+                        <div>
+                            <div class="flex flex-row   items-center justify-between">
+                                <img src="./images/smiling-holding-points-bucket-cleaning-tools-young-africanamerican-cleaner-male-uniform-with-gloves-isolated-green-background.jpg"
+                                    alt="" class="w-28 rounded-md">
+                                <p class="font-bold">Post Cleaning</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                        <div>
+
+                            <div class="flex flex-row items-center justify-between">
+                                <img src="./images/full-shot-man-pushing-elevator-button.jpg" alt=""
+                                    class="w-28 rounded-md">
+                                <p class="font-bold">Commercial <br> Cleaning</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                        <div>
+
+                            <div class="flex flex-row items-center justify-between">
+                                <img src="./images/medium-shot-man-cleaning-table.jpg" alt="" class="w-28 rounded-md">
+                                <p class="font-bold">Banks Cleaning</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                    </div>
+                    <button
+                        class="text-center bg-black font-bold text-xl text-blue-400 rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-blue-600 hover:text-white">choose</button>
+                </div>
+                <div class="text-center bg-white rounded-l-2xl p-10">
+                    <div class="flex flex-row">
+                        <img src="./images/image 13 (1) 1.png" alt="" class="w-10">
+                        <P class="text-2xl text-[#21B7E2] font-alkatra">Property Maintenance</P>
+                    </div>
+                    <div class="flex flex-col mt-3 gap-5">
+                        <div>
+                            <div class="flex flex-row items-center  justify-between">
+                                <img src="./images/proactive.jpg" alt="" class="w-28">
+                                <p class="font-bold">Proactive <br> Maintenace</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                        <div>
+                            <div class="flex flex-row items-center justify-between">
+                                <img src="./images/reactive.jpg" alt="" class="w-28">
+                                <p class="font-bold">Reactive <br> Maintenace</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                        <div>
+                            <div class="flex flex-row items-center justify-between">
+                                <img src="./images/seasonal.jpg" alt="" class="w-20">
+                                <p class="font-bold">Seasonal <br> Maintenace</p>
+                            </div>
+                            <img src="./images/Divider.png" alt="" class="w-60">
+                        </div>
+                    </div>
+                    <button
+                        class="text-center bg-[#D0F6FF] font-bold text-xl rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                </div>
+            </div>
+            <div class="my-20 px-20 py-20  bg-[#F2F9FA]  w-full">
+                <p class="text-4xl font-bold">Clean Method’s construction cleaning services include:</p>
+                <div class="w-28 h-2 mb-5 bg-orange-300"></div>
+                <div class="flex flex-row text-xl   justify-around ">
+                    <ol class=" flex flex-col gap-5 list-decimal">
+                        <li>Pre-inspection rough cleaning</li>
+                        <li>Post-construction final cleaning</li>
+                        <li>Top-to-bottom dusting</li>
+                        <li>Surface and wall cleaning</li>
+                        <li>Debris and trash removal</li>
+                    </ol>
+                    <ol class=" flex flex-col gap-5 list-decimal">
+                        <li>Floor and carpet cleaning</li>
+                        <li>Full building sanitization</li>
+                        <li>Architectural element cleaning</li>
+                        <li>
+                            Interior and exterior window and frame cleaning</li>
+                        <li>Pressure washing</li>
+                    </ol>
+                </div>
+            </div>
+            <div
+                class="thinking mt-28 mb-24 z-10 flex flex-col items-end px-36 justify-center  relative border-2 border-red-400 md:w-[1280px] w-96 md:h-[400px] mx-auto  rounded-[120px] ">
+                <!-- <img src="./images/Thinking face-bro 1.png" alt="" class="md:-mt-28  w-72"> -->
+                <div class="absolute top-0 right-0 z-20 bottom-0 left-0 bg-[#F7FEFF] rounded-[120px]  opacity-70"></div>
+                <div class="md:border-2 relative z-30 md:border-red-700 md:rounded-lg flex flex-col justify- max-w-md">
+                    <p class="font-bold md:text-6xl text-2xl font-alata text-center">Let us work <br> for you</p>
+                    <button
+                        class="text-center  bg-white font-bold text-xl mx-auto rounded-full w-44  p-2 my-10 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="w-full  bg-[#D0F6FF] pr-40 pl-20 py-10 ">
+            <div class="flex flex-col md:flex-row  justify-between">
+                <div class="flex mt-10 md:mt-0 justify-center flex-row items-center ">
+                    <div class="relative -mt-10">
+                        <img src="./images/Bubbles (4).png" alt="" class=" ml-20 mt-5">
+                        <img src="./images/Bubbles (3).png" alt="" class=" -mt-40">
+                    </div>
+                    <div class="-ml-20">
+                        <p class="font-bold text-6xl   font-LuckiestGuy  skleanz">Skleanz</p>
+                    </div>
+
+                </div>
+                <div class="flex flex-col mt-16 md:mt-0 gap-10 md:flex-row md:gap-14">
+                    <div>
+                        <p class="font-bold text-xl">About us</p>
+                        <div>
+                            <ul class=" flex flex-col gap-3 my-5">
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    About
+                                    Us</li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Creators</li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Philosophy</li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl">Service Hours</p>
+                        <div>
+                            <ul class=" flex flex-col gap-3 my-5">
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100 font-bold">
+                                    Mon - Sunday</li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    24hrs
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl">Services</p>
+                        <div>
+                            <ul class=" flex flex-col gap-3 my-5">
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Pre-inspection rough cleaning
+
+
+                                </li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Post-construction final cleaning</li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+
+                                    Top-to-bottom dusting</li>
+                                <li
+                                    class="cursor-pointer hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Surface and wall cleaning</li>
+                                <li
+                                    class="cursor-pointer active:text-green-500 hover:text-red-400 hover:scale-105 transition-all duration-100">
+                                    Debris and trash removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl">Contact us</p>
+                        <div class="flex space-x-5 justify-center mt-5">
+                            <a href="https://wa.me/8072485440"> <i class="fa-brands fa-square-whatsapp fa-fade fa-xl"
+                                    style="color: #3d6c04;"></i></a>
+                            <a href="mailto:sandraosaruyi@outlook.com"> <i
+                                    class="fa-sharp fa-solid fa-envelope fa-fade fa-xl"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center text-xl font-bold mt-10">
+                <p> &copy; 2023 all rights reserved</p>
+            </div>
+
+        </footer>
+
+    </main>
+</body>
+
+</html>
