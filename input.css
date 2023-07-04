@@ -8,10 +8,13 @@
 }
 
 main #sec {
-    background-image: url(../images/full-shot-man-pushing-elevator-button.jpg);
+    background-image: url(../images/casual-life-3d-cleaning-supplies.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
+}
+ol div img{
+    filter: contrast(200%) brightness(150%);
 }
 
 .thinking {
@@ -40,4 +43,10 @@ main #sec {
 
 .custom-shape-divider-bottom-1687769215 .shape-fill {
     fill: #E6F7FC;
+}
+#customerreview{
+    background-image: url(../images/afro-woman-holding-bucket-with-cleaning-items.jpg)  ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
 }

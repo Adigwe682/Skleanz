@@ -21,7 +21,7 @@
     <title>Simple Tailwind Starter</title>
 </head>
 
-<body>
+<body class="relative">
     <div id="mobile-overlay" class="hidden  bg-black fixed z-20 opacity-90 top-0 right-0 left-0 bottom-0"></div>
     <header class="  px-6 md:py-2  md:pl-28 md:pr-20 bg-[#FDF9F8] shadow-2xl shadow-black md:shadow-none relative">
 
@@ -40,14 +40,14 @@
                     <a href="#">
                         <p class="hover:text-green-500 cursor-pointer">Home</p>
                     </a>
-                    <a href="#2">
+                    <a href="#Howitworks">
                         <p class="hover:text-green-500 cursor-pointer">How it works </p>
                     </a>
-                    <a href="#3">
+                    <a href="#services">
                         <p class="hover:text-green-500 cursor-pointer">Services</p>
                     </a>
-                   
-                    <a href="">
+
+                    <a href="#footer">
                         <p class="hover:text-green-500 cursor-pointer">Contact Us</p>
                     </a>
                 </div>
@@ -69,10 +69,10 @@
                 <a href="#2">
                     <p id="aboutus" class="hover:text-green-500 cursor-pointer">About Us</p>
                 </a>
-                <a href="#3">
+                <a href="#contact">
                     <p id="Contact" class="hover:text-green-500 cursor-pointer">Contact Us</p>
                 </a>
-                <a href="">
+                <a href="#footer">
                     <p id="blog" class="hover:text-green-500 cursor-pointer">Blog</p>
                 </a>
             </div>
@@ -82,9 +82,19 @@
     <main>
 
         <section class="w-full  relative flex flex-col  justify-center  z-10  h-[600px]" id="sec">
-            <div class="opacity-70 bg-[#FDF9F8] absolute top-0 right-0 bottom-0 z-20 left-0 flex  justify-center">
+            <div class="imgb opacity-70 bg-[#FDF9F8] absolute top-0 right-0 bottom-0 z-20 left-0 flex  justify-center">
             </div>
             <div class="text-center    relative z-30">
+                <div class="flex mt-10 md:mt-0 justify-center flex-row items-center ">
+                    <div class="relative -mt-10">
+                        <img src="./images/Bubbles (4).png" alt="" class=" ml-20 mt-5">
+                        <img src="./images/Bubbles (3).png" alt="" class=" -mt-40">
+                    </div>
+                    <div class="-ml-20">
+                        <p class="font-bold text-6xl   font-LuckiestGuy  skleanz">Skleanz</p>
+                    </div>
+
+                </div>
                 <p
                     class="text-xl mx-auto text-center bg-[#F7FEFF] rounded-full px-2 py-2  text-black font-bold max-w-md">
                     20%
@@ -95,7 +105,7 @@
                     wash,dry and
                     fold your laundry at an affordable price. Pick up and drop-up options available!</p>
                 <div class="my-10">
-                    <a href="#2" class=" flex justify-center"> <button
+                    <a href="#Howitworks" class=" flex justify-center"> <button
                             class="capitalize shadow-lg shadow-blue-200 font-bold   text-center   px-14 py-2  text-2xl rounded-full bg-[#D0F6FF]">How
                             it works</button></a>
                 </div>
@@ -133,7 +143,7 @@
             </div>
         </section>
 
-        <section class="px-6 bg-[#F2F9FA] py-10  w-full  md:px-20" id="2">
+        <section class="px-6 bg-[#F2F9FA] py-10  w-full  md:px-20" id="Howitworks">
             <p class="text-center font-bold text-xl mb-5 text-[#21B7E2]">How it works</p>
             <p class="text-center text-black text-4xl mb-14 font-bold">Get it done in 4 steps</p>
             <div class="flex flex-col items-center md:flex-row gap-10 md:justify-center">
@@ -149,12 +159,7 @@
                     <p class="text-center text-[#21B7E2] text-xl my-2  font-bold">LIGHT CLEAN</p>
                     <img src="./images/Laundry and dry cleaning-bro (4) 1.png" alt="" class="-mt-14">
                 </div>
-                <div
-                    class="bg-white hover:scale-110 transition-all duration-700  w-60 p-5 shadow-lg shadow-blue-300 rounded-md">
-                    <p class="text-center font-bold">Step 3</p>
-                    <p class="text-center text-[#21B7E2] text-xl my-2  font-bold"></p>
-                    <img src="./images/Laundry and dry cleaning-bro 1.png" alt="" class="-mt-14">
-                </div>
+
                 <div
                     class="bg-white hover:scale-110 transition-all duration-700  w-60 p-5 shadow-lg shadow-blue-300 rounded-md">
                     <p class="text-center font-bold">Step 4</p>
@@ -163,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <section class=" bg-[#F7FEFF] py-10 load ">
+        <section class=" bg-[#F7FEFF] py-10 load  " id="services">
             <p class="text-center font-bold text-xl my-5 text-[#21B7E2]">Services</p>
             <p class="text-center text-black text-4xl mb-14 font-bold">Services & Packages</p>
             <div class="flex flex-col items-center md:flex-row gap-5 md:justify-center">
@@ -195,8 +200,11 @@
                             <img src="./images/Divider.png" alt="" class="w-60">
                         </div>
                     </div>
-                    <button
-                        class="text-center bg-[#D0F6FF] font-bold text-xl rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                    <a href="https://wa.me/+2349096503792">
+                        <button
+                            class="text-center bg-[#D0F6FF] font-bold text-xl rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                    </a>
+
                 </div>
                 <div class="text-center bg-[#D0F6FF] -translate-y-5 shadow-2xl shadow-[#E5ECED] rounded-2xl p-10">
                     <div class="flex flex-row items-center">
@@ -230,8 +238,10 @@
                             <img src="./images/Divider.png" alt="" class="w-60">
                         </div>
                     </div>
-                    <button
-                        class="text-center bg-black font-bold text-xl text-blue-400 rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-blue-600 hover:text-white">choose</button>
+                    <a href="https://wa.me/+2349096503792">
+                        <button
+                            class="text-center bg-black font-bold text-xl text-blue-400 rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-blue-600 hover:text-white">choose</button>
+                    </a>
                 </div>
                 <div class="text-center bg-white rounded-l-2xl p-10">
                     <div class="flex flex-row">
@@ -261,44 +271,118 @@
                             <img src="./images/Divider.png" alt="" class="w-60">
                         </div>
                     </div>
-                    <button
-                        class="text-center bg-[#D0F6FF] font-bold text-xl rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                    <a href="https://wa.me/+2349096503792">
+                        <button
+                            class="text-center bg-[#D0F6FF] font-bold text-xl rounded-full py-3 my-10 px-20 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                    </a>
                 </div>
             </div>
             <div class="my-20 px-20 py-20  bg-[#F2F9FA]  w-full">
                 <p class="text-4xl font-bold">Clean Method’s construction cleaning services include:</p>
                 <div class="w-28 h-2 mb-5 bg-orange-300"></div>
-                <div class="flex flex-row text-xl   justify-around ">
-                    <ol class=" flex flex-col gap-5 list-decimal">
-                        <li>Pre-inspection rough cleaning</li>
-                        <li>Post-construction final cleaning</li>
-                        <li>Top-to-bottom dusting</li>
-                        <li>Surface and wall cleaning</li>
-                        <li>Debris and trash removal</li>
+                <div class="flex flex-col gap-5 md:flex-row text-xl   justify-around ">
+                    <ol class=" flex flex-col gap-5 ">
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Pre-inspection rough cleaning</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Post-construction final cleaning</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Top-to-bottom dusting</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Surface and wall cleaning</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Debris and trash removal</li>
+                        </div>
                     </ol>
                     <ol class=" flex flex-col gap-5 list-decimal">
-                        <li>Floor and carpet cleaning</li>
-                        <li>Full building sanitization</li>
-                        <li>Architectural element cleaning</li>
-                        <li>
-                            Interior and exterior window and frame cleaning</li>
-                        <li>Pressure washing</li>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Floor and carpet cleaning</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Full building sanitization</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Architectural element cleaning</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Interior and exterior window and frame cleaning</li>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <img src="./images/certificate-solid.svg" alt="" class="w-6">
+                            <li>Pressure washing</li>
+                        </div>
                     </ol>
                 </div>
             </div>
             <div
-                class="thinking mt-28 mb-24 z-10 flex flex-col items-end px-36 justify-center  relative border-2 border-red-400 md:w-[1280px] w-96 md:h-[400px] mx-auto  rounded-[120px] ">
+                class="thinking mt-28 mb-24 z-10 py-5 md:py-0 flex flex-col md:items-end md:px-36 justify-center  relative border-2 border-red-400 md:w-[1280px] w-96 md:h-[400px] mx-auto  rounded-[120px] ">
                 <!-- <img src="./images/Thinking face-bro 1.png" alt="" class="md:-mt-28  w-72"> -->
                 <div class="absolute top-0 right-0 z-20 bottom-0 left-0 bg-[#F7FEFF] rounded-[120px]  opacity-70"></div>
-                <div class="md:border-2 relative z-30 md:border-red-700 md:rounded-lg flex flex-col justify- max-w-md">
+                <div class="md:border-2 relative z-30 md:border-red-700 md:rounded-lg flex flex-col justify-center md:max-w-md">
                     <p class="font-bold md:text-6xl text-2xl font-alata text-center">Let us work <br> for you</p>
-                    <button
-                        class="text-center  bg-white font-bold text-xl mx-auto rounded-full w-44  p-2 my-10 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                    <a href="https://wa.me/+2349096503792" class="mx-auto">
+
+                        <button
+                            class="text-center  bg-white font-bold text-xl mx-auto rounded-full w-44  p-2 my-10 transition-all duration-700 hover:px-10 hover:bg-black hover:text-white">choose</button>
+                    </a>
                 </div>
             </div>
             </div>
         </section>
-        <footer class="w-full  bg-[#D0F6FF] pr-40 pl-20 py-10 ">
+        <section class="w-full relative  z-10  p-10" id="customerreview">
+            <div class="absolute top-0 right-0 left-0 bottom-0 opacity-75 bg-black"></div>
+            <div class=" z-30 flex flex-col md:flex-row justify-center items-center gap-5">
+                <div
+                    class="rounded-tr-3xl z-10 relative opacity-70 border-2 border-2-red rounded-bl-3xl bg-white md:w-[25%] text-center p-10 hover:scale-105 transition-all duration-700 ">
+                    <div class="relative z-40">
+                        <p class="text-black"><span class="text-4xl text-red-500">"</span> We have an office building and
+                            continue to receive exceptional service from Clean Team. They are timely, responsive and always
+                            priced competitively. Highly recommend using this company. <span
+                                class="text-4xl text-red-500">"</span></p>
+                        <p class="mt-10 font-bold text-black">.ADIGWE EMMANUEL</p>
+                    </div>
+                </div>
+                <div
+                    class="rounded-tr-3xl opacity-70 border-2 border-green-700 rounded-bl-3xl bg-purple-500 md:w-[25%] text-center p-10 hover:scale-105 transition-all duration-700 ">
+                    <p class="text-white"><span class="text-4xl text-red-500">"</span>Fantastic service! Always helpful,
+                        courteous and EASY TO REACH!! That is so important to us and not easy to find! <span
+                            class="text-4xl text-red-500">"</span>.</p>
+                    <p class="mt-10 font-bold text-white">.MIKE</p>
+                </div>
+                <div
+                    class="rounded-tr-3xl opacity-70   border-2 border-yellow-300 rounded-bl-3xl bg-green-800 md:w-[25%] text-center p-10 hover:scale-105 transition-all duration-700 ">
+                    <p class="text-white"><span class="text-4xl text-red-500">"</span>I just wanted to let you know that
+                        Dan is doing a great job. I appreciate all the effort he makes to keep our clinic in great
+                        shape. <span class="text-4xl text-red-500">"</span></p>
+                    <p class="mt-10 font-bold text-white">- Facility AdministratorL</p>
+                </div>
+                <div
+                    class="rounded-tr-3xl opacity-70  border-2 border-purple-800 rounded-bl-3xl bg-red-700 md:w-[25%] text-center p-10 text-white hover:scale-105 transition-all duration-700 ">
+                    I have worked with cleaning services at other libraries and am truly quite pleased with the service
+                    provided by Clean Team. It feels like they truly have buy-in to the building, no matter what the
+                    circumstances. Professional, efficient, and friendly, I really enjoy working with everyone at Clean
+                    Team. <span class="text-4xl text-red-500">"</span></p>
+                    <p class="mt-10 font-bold text-white">-Beth
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+        <footer class="w-full  bg-[#D0F6FF] pr-40 pl-20 py-10  " id="footer">
             <div class="flex flex-col md:flex-row  justify-between">
                 <div class="flex mt-10 md:mt-0 justify-center flex-row items-center ">
                     <div class="relative -mt-10">
@@ -389,7 +473,11 @@
             </div>
 
         </footer>
-
+        <a href="#" class="cursor-pointer">
+            <img src="data:image/png;base64,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"
+                class="w-10 fixed bottom-0 right-0">
+        </a>
+       
     </main>
 </body>
 
